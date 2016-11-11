@@ -1,2 +1,7 @@
 # KalmanFilterLite
-Light weight modified Kalman Filter for single and double variable inputs for IMU sensor data filtering implemented using Arduino Boards
+Light weight modified Kalman Filter for single and double variable inputs for IMU sensor data filtering implemented using Arduino Boards.
+
+Abstract:
+A low cost Inertial Measurement Unit (IMU) sensor typically includes a Gyroscope and an Accelerometer with six Degrees of Freedom. Due to its low manufacturing cost, it is used in many small projects. However the raw data from these sensors are not completely reliable, as the accelerometer generates a lot of noise from physical vibrations, and the gyroscope tends to produce a drift over time. Special filters such as Complementary Filter and Kalman Filter are commonly used to reduce the noise in real-time. For simple applications Complementary filter is fine, but more complex and precise projects such as Self-Balancing Robots and Quadcopters requires the use of the Kalman Filter. The Kalman Filter algorithm is quite complex and has a lot of floating point matrix multiplications, which can be very heavy for a small microprocessor such as Arduino. In applications like quadcopter the Proportional Integral Derivative (PID) loop has to run at minimum 80 Hz. This research aims to develop a light weight modified version of Kalman Filter which can be easily included as an external library. This allows fast looping time for the microprocessor. The primary purpose of this library is for applications which require low latency, such as quadcopter and self-balancing robots, but the library may prove to be useful in other similar projects too.
+
+Research paper yet to be published.
